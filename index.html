@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/favicon.png" />
+    <link rel="psreconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
 
-<head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width"/>
-    <link rel="icon" href="favicon.png">
-    <title>CV - Thomas Basquin</title>  
-</head>
+    <title>Thomas Basquin Portfolio</title>
+  </head>
 
-<body>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">Thomas</a>
 
-    <header>
-        <h1>CV de Thomas Basquin</h1>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">
+                <i class="uil uil-estate nav_icon"></i> Home
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">
+                <i class="uil uil-user nav_icon"></i> About
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">
+                <i class="uil uil-file-alt nav_icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#portfolio" class="nav_link">
+                <i class="uil uil-scenery nav_icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">
+                <i class="uil uil-message nav_icon"></i> Contact
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#github" class="nav_link">
+                <i class="uil uil-github nav_icon"></i> Github
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav_close" id="nav-close"></i>
+        </div>
 
-
+        <div class="nav_btns">
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
     </header>
-    
-</body>
 
+    <script src="./js/index.js"></script>
+  </body>
 </html>
