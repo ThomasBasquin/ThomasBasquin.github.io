@@ -1,86 +1,602 @@
 <!DOCTYPE html>
-
-<html lang="fr">
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" href="./img/favicon.png" />
-    <link rel="psreconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Thomas Portfolio</title>
+    <meta name="author" content="Thomas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Thomas Basquin Portfolio</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
   </head>
 
-  <body>
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav_logo">Thomas</a>
+  <body id="top">
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
 
-        <div class="nav_menu" id="nav-menu">
-          <ul class="nav_list grid">
-            <li class="nav_item active">
-              <a href="./index.html" class="nav_link active">
-                <i class="uil uil-estate nav_icon"></i> Home
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#about" class="nav_link">
-                <i class="uil uil-user nav_icon"></i> About
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#skills" class="nav_link">
-                <i class="uil uil-file-alt nav_icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#portfolio" class="nav_link">
-                <i class="uil uil-scenery nav_icon"></i> Portfolio
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#contact" class="nav_link">
-                <i class="uil uil-message nav_icon"></i> Contact
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#github" class="nav_link">
-                <i class="uil uil-github nav_icon"></i> Github
-              </a>
-            </li>
-          </ul>
-          <i class="uil uil-times nav_close" id="nav-close"></i>
+    <header class="s-header">
+      <div class="header-logo">
+        <a class="logo" href="index.html">
+          <img src="favicon.ico" alt="Homepage" />
+        </a>
+      </div>
+
+      <nav class="header-nav-wrap">
+        <ul class="header-main-nav">
+          <li class="current">
+            <a class="smoothscroll" href="#intro" title="intro">Accueil</a>
+          </li>
+          <li><a class="smoothscroll" href="#about" title="about">cv</a></li>
+          <li>
+            <a class="smoothscroll" href="#services" title="services">Skills</a>
+          </li>
+          <li>
+            <a class="smoothscroll" href="#works" title="works">Mes projets</a>
+          </li>
+          <li>
+            <a class="smoothscroll" href="#contact" title="contact us"
+              >me contacter</a
+            >
+          </li>
+        </ul>
+
+        <ul class="header-social">
+          <li>
+            <a href="https://github.com/ThomasBasquin" target="_blank"
+              ><i class="fab fa-github" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/thomas-basquin-bba0361b0/"
+              target="_blank"
+              ><i class="fab fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    </header>
+
+    <!-- --------------------------- Accueil --------------------------- -->
+
+    <section id="intro" class="s-intro target-section">
+      <div class="row intro-content">
+        <div class="column large-9 mob-full intro-text">
+          <h3>Bonjour, je suis Thomas Basquin</h3>
+          <h1>
+            Etudiant Informatique <br />
+            IUT de Metz <br />
+            19 ans
+          </h1>
         </div>
 
-        <div class="nav_btns">
-          <div class="nav_toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
+        <div class="intro-scroll">
+          <a href="#about" class="intro-scroll-link smoothscroll">
+            Scroll pour plus d'infos
+          </a>
+        </div>
+
+        <div class="intro-grid"></div>
+        <div class="intro-pic"></div>
+      </div>
+    </section>
+
+    <!-- --------------------------- About me --------------------------- -->
+
+    <section id="about" class="s-about target-section">
+      <div class="about-me">
+        <div class="row heading-block" data-aos="fade-up">
+          <div class="column large-full">
+            <h2 class="section-heading">CV</h2>
           </div>
         </div>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="gps">
-        <div class="parcoursJulie">
-          <iframe
-            src="https://connect.garmin.com/modern/activity/embed/7249446169"
-            title="Ussat Cyclisme avec Julie"
-            width="465"
-            height="500"
-            frameborder="0"
-          ></iframe>
+
+        <div class="row about-me__content" data-aos="fade-up">
+          <div class="column large-full about-me__text">
+            <img
+              src="/images/CV_ThomasBasquin.png"
+              class="img-CV_ThomasBasquin"
+              alt="CV Thomas BASQUIN"
+            />
+          </div>
+        </div>
+
+        <div class="row about-me__buttons">
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <a
+              href="/CV_ThomasBasquin.pdf"
+              class="btn btn--primary full-width"
+              target="_blank"
+              >Télécharger CV - FR</a
+            >
+          </div>
+
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <a
+              href="/CV_ThomasBasquin_EN.pdf"
+              class="btn btn--primary full-width"
+              target="_blank"
+              >Download CV - EN</a
+            >
+          </div>
         </div>
       </div>
-    </main>
 
-    <script src="./js/index.js"></script>
+      <div class="about-experience">
+        <div class="row heading-block" data-aos="fade-up">
+          <div class="column large-full">
+            <h2 class="section-heading">A propos de moi</h2>
+          </div>
+        </div>
+
+        <div class="row about-experience__timeline">
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <div class="timeline">
+              <div class="timeline__icon-wrap">
+                <span class="timeline__icon timeline__icon--work"></span>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2016</p>
+                  <h3 class="item-title">Office National des Forêts</h3>
+                  <h5>Saverne</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    J'ai effectué un stage avec un administrateur réseau à
+                    l'ONF. J'ai donc géré une infrastructure réseau de taille
+                    moyenne. J'ai appris à être autonome, à rechercher les
+                    informations de moi même et à dépanner des utilisateurs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <div class="timeline">
+              <div class="timeline__icon-wrap">
+                <span class="timeline__icon timeline__icon--education"></span>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">Septembre 2020 - Present</p>
+                  <h3 class="item-title">IUT de Metz</h3>
+                  <h5>DUT informatique</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    Je suis actuellement en 2ème année de DUT informatique pour
+                    obtenir mon diplôme et continuer mes études dans le
+                    développement web !
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">
+                    Septembre 2017 - Juillet 2020
+                  </p>
+                  <h3 class="item-title">Lycée Général Leclerc - Saverne</h3>
+                  <h5>Bac S</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------- Skills --------------------------- -->
+
+    <section id="services" class="s-services ss-dark target-section">
+      <div class="shadow-overlay"></div>
+
+      <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading section-heading--centerbottom">Skills</h2>
+
+          <p class="section-desc">
+            Les différentes technologies que je maîtrise !
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="row services-list block-large-1-3 block-medium-1-2 block-tab-full"
+      >
+        <div class="column item-service" data-aos="fade-up">
+          <div class="skills">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+              alt="html"
+              class="img-skills"
+            />
+            <h4 class="item-title" style="padding-bottom: 2.5em">HTML</h4>
+          </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+          <div class="skills">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+              alt="css"
+              class="img-skills"
+            />
+            <h4 class="item-title" style="padding-bottom: 2.5em">Css</h4>
+          </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+          <div class="skills">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+              alt="java"
+              class="img-skills"
+            />
+            <h4 class="item-title" style="padding-bottom: 2.5em">Java</h4>
+          </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+          <div class="skills">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+              alt="Mysql"
+              class="img-skills"
+            />
+            <h4 class="item-title">MySql</h4>
+          </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+          <div class="skills">
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
+              alt="php"
+              class="img-skills"
+            />
+            <h4 class="item-title">PHP</h4>
+          </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+          <div class="skills">
+            <img
+              src="https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667"
+              alt="github"
+              class="img-skills"
+            />
+            <h4 class="item-title">GitHub</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------- Mes projets --------------------------- -->
+
+    <section id="works" class="s-works target-section">
+      <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading section-heading--centerbottom">
+            Mes projets
+          </h2>
+          <p class="section-desc">
+            Voici quelques un de mes projets que j'ai sélectionnés pour mon
+            portolio !
+          </p>
+        </div>
+      </div>
+
+      <div class="masonry-wrap">
+        <div class="masonry">
+          <div class="grid-sizer"></div>
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="images/Graoully-games.png"
+                  class="thumb-link"
+                  title="Graoully Games"
+                  data-size="1883x882"
+                >
+                  <img
+                    src="images/Graoully-games.png"
+                    srcset="
+                      images/Graoully-games.png 1x,
+                      images/Graoully-games.png 2x
+                    "
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://github.com/ThomasBasquin/Graoully-Games"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Graoully Games</h4>
+                <p class="item-folio__cat">Site présentation de jeux vidéos</p>
+              </div>
+
+              <div class="item-folio__caption">
+                <p>
+                  Projet Web réalisé à 5 personnes durant notre premier semestre
+                  de DUT informatique. L'objectif du projet était de développer
+                  nos compétences relationnelles et notre autonomie dans le
+                  travail.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="images/Jeu-de-nim.png"
+                  class="thumb-link"
+                  title="Jeu de Nim"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="images/Jeu-de-nim.png"
+                    srcset="images/Jeu-de-nim.png 1x, images/Jeu-de-nim.png 2x"
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://github.com/ThomasBasquin/jeu-de-nim-C"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Jeu de Nim</h4>
+                <p class="item-folio__cat">
+                  Projet C - jeu de Nim contre l'ordinateur
+                </p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  Ce projet a été réalisé durant le premier semestre du DUT dans
+                  une équipe de trois personne. L'objectif étant de réaliser le
+                  jeu de nim contre l'ordinateur en langage C. Ce projet nous a
+                  servi à maîtriser les concepts de l'algorithmique et de la
+                  programmation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="images/videotheque.png"
+                  class="thumb-link"
+                  title="Videotheque"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="images/videotheque.png"
+                    srcset="
+                      images/videotheque.png 1x,
+                      images/videotheque.png 2x
+                    "
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://github.com/ThomasBasquin/Videotheque"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Vidéothèque</h4>
+                <p class="item-folio__cat">Projet Java</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  Projet java réalisé durant le second semestre de DUT par
+                  groupe de deux. Le logiciel sert à gérer les commandes, les
+                  clients et les articles d'une vidéothèque. Nous avons donc
+                  appris à modéliser un problème avec UML et faire sa mise en
+                  œuvre en Java.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="masonry__brick" data-aos="fade-up">
+            <div class="item-folio">
+              <div class="item-folio__thumb">
+                <a
+                  href="images/Graoully-blog.png"
+                  class="thumb-link"
+                  title="Graoully Blog"
+                  data-size="1050x700"
+                >
+                  <img
+                    src="images/Graoully-blog.png"
+                    srcset="
+                      images/Graoully-blog.png 1x,
+                      images/Graoully-blog.png 2x
+                    "
+                    alt=""
+                  />
+                </a>
+                <a
+                  href="https://github.com/ThomasBasquin/Blog-PHP"
+                  class="item-folio__project-link"
+                  title="Project link"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="item-folio__text">
+                <h4 class="item-folio__title">Graoully-blog</h4>
+                <p class="item-folio__cat">Projet PHP</p>
+              </div>
+              <div class="item-folio__caption">
+                <p>
+                  Projet java réalisé par groupe de trois durant le troisième
+                  semestre. Le site est un blog réalisé en PHP avec une gestion
+                  d'inscription et de connexion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------- Contact --------------------------- -->
+
+    <section id="contact" class="s-contact ss-dark target-section">
+      <div class="row heading-block" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading">Me contacter</h2>
+        </div>
+      </div>
+
+      <div class="row contact-main" data-aos="fade-up">
+        <div class="column large-full">
+          <p class="contact-email">
+            <a href="mailto:#thomas.basquin2@gmail.com"
+              >thomas.basquin2@gmail.com</a
+            >
+          </p>
+
+          <p class="section-desc">
+            N'hésitez pas à me contacter si vous avez envie de discuter ou de
+            partager quelque chose avec moi !
+            <a href="mailto:#thomas.basquin2@gmail.com">M'envoyer un mail</a>.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="row contact-infos"
+        data-aos="fade-up"
+        data-aos-anchor=".contact-main"
+      >
+        <div class="column large-5 medium-full contact-phone">
+          <h4>Mon numéro</h4>
+          <a href="tel:06-83-30-00-63">06.83.30.00.63</a>
+        </div>
+
+        <div class="column large-7 medium-full contact-social">
+          <h4>Social</h4>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/ThomasBasquin"
+                title="Facebook"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- end contact-infos -->
+    </section>
+    <!-- end s-contact -->
+
+    <!-- --------------------------- Footer --------------------------- -->
+
+    <footer>
+      <div class="row">
+        <div class="column large-full ss-copyright">
+          <span>© Copyright Thomas 2022</span>
+        </div>
+
+        <div class="ss-go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+      </div>
+    </footer>
+
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
